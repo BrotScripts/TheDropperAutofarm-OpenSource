@@ -1,0 +1,12 @@
+repeat
+    wait(1)
+    if game:IsLoaded() then
+        while wait(2) do
+            local A_1 = 91
+            local Event = game:GetService("ReplicatedStorage").Level
+            Event:FireServer(A_1)
+            wait(1)
+            game:GetService("TeleportService"):Teleport(166731267, game:GetService("Players").LocalPlayer)
+        end
+    end
+until game:IsLoaded()
